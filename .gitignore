@@ -10,4 +10,5 @@ public/bower_components/
 *.swo
 *.swp~
 *.swo~
+npm-debug.log
 

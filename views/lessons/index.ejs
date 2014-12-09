@@ -9,17 +9,13 @@
   </head>
   <body ng-controller="SpaceListCtrl">
     <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-		<p>Nothing here {{'yet' + '!'}}</p>
-		<p>1 + 2 = {{ 1 + 2 }}</p>
 		<ul>
 			<li ng-repeat="space in spaces">
 			<span>{{space.name}}</span>
 			<p>{{space.snippet}}</p>
 			</li>
 		</ul>
-		<p>大理有多少客栈呢: {{spaces.length}}</p>
-		<p>Hello {{name}}</p>
-		<a href="step3">Step 3</a>
+		<a href="/">Home</a><br/>
+		<a href="/step3">Step 3</a>
   </body>
 </html>

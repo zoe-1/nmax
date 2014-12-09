@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+		<p>Created controller called lessons. 
+		This will have a view for some of the lessons made in the future. <br/>
+		This steps new code is all Express related code.</p>
+		<p>Key changes made:<br/>
+		<ul>
+			<li>
+			<span>app.js</span>
+			<p>Added code for new routes.</p>
+			</li>
+			<li>
+			<span>routes/lessons.js</span>
+			<p>Express controller for lessons' routes.<br/>
+				Controller has two routes:<br/>	
+				lessons<br/>
+				step3
+			</p>
+			</li>
+			<li>
+			<span>views/lessons/index.ejs</span>
+			<p>view file for lessons route.</p>
+			</li>
+			<li>
+			<span>views/lessons/step3.ejs</span>
+			<p>view file for step3 route (this view).</p>
+			</li>
+		</ul>
+		</p>
+		<a href="/lessons">Lessons</a><br/>
+		<a href="/">Home</a>
+  </body>
+</html>
