@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="axpressApp">
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/lessons.css' />
+  	<script src="bower_components/angular/angular.js"></script>
+		<script src="javascripts/controllers.js"></script>
+  </head>
+  <body ng-controller="LessonListCtrl">
+    <h1><%= title %></h1>
+		<p>Controller has JSON data. 
+		The repeater then filters data based on text in input box. <br/>
+		</p>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="lesson_row" >
+					<!--Sidebar content-->
+					Search: <input ng-model="query">
+					<br/>
+					<br/>
+					<br/>
+				</div>
+				<div  class="lesson_row">
+					<!--Body content-->
+					{{lessons.name}}
+					<ul ng-repeat="content in lessons.content | filter:query" >
+						<li>
+							<p>{{ content.item_name }}	<br/>
+							<span>{{ content.item_description }}	</span>
+							</p>
+						</li>
+					</ul>
+					<br/>
+					<br/>
+					<br/>
+
+				</div>
+			</div>
+		</div>
+		<div class="key_changes_list">
+			<p>Key changes made:<br/>
+			<ul>
+				<li>
+				<span>app.js</span>
+				<p>Added code for step4 routes.</p>
+				</li>
+				<li>
+				<span>routes/lessons.js</span>
+				<p>Added method for step4 route.<br/>
+					Controller has three routes:<br/>	
+					lessons<br/>
+					step3<br/>
+					step4<br/>
+				</p>
+				</li>
+				<li>
+				<span>views/lessons/step4.ejs</span>
+				<p>New HTML view template.</p>
+				</li>
+			</ul>
+			</p>
+		</div>
+		<a href="/lessons">Lessons</a><br/>
+		<a href="/">Home</a>
+  </body>
+</html>

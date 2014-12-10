@@ -29,6 +29,7 @@ app.use('/users', users);
 // Lessons 
 app.use('/lessons', lessons);
 app.use('/step3', lessons.step3);
+app.use('/step4', lessons.step4);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -22,4 +22,12 @@ router.step3 = function(req, res) {
 }
 
 
+router.step4 = function(req, res) { 
+	 // [Model_findExample]
+	 res.render('lessons/step4', {
+		 title: 'Step 4: Filter Repeaters Data.',
+	 });
+
+}
+
 module.exports = router;
