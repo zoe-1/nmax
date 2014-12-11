@@ -1,0 +1,49 @@
+{NMAXContents}
+/******************************
+	NMAX structure                  [ProjectStructure]
+*******************************/
+
+.
+├── app.js
+├── bin
+│   └── www
+├── bower.json
+├── Contents.txt
+├── db
+│   ├── schema.js
+│   └── seeds.js
+├── npm-debug.log
+├── package.json
+├── public
+│   ├── images
+│   ├── javascripts
+│   │   └── controllers.js
+│   └── stylesheets
+│       ├── lessons.css
+│       └── style.css
+├── routes
+│   ├── index.js
+│   ├── lessons.js
+│   └── users.js
+├── tags
+├── test
+│   ├── e2e
+│   │   ├── README.md
+│   │   └── scenarios.js
+│   ├── karma.conf.js
+│   ├── protractor-conf.js
+│   └── unit
+│       ├── controllersSpec.js
+│       ├── directivesSpec.js
+│       ├── filtersSpec.js
+│       └── servicesSpec.js
+└── views
+    ├── error.ejs
+    ├── index.ejs
+    └── lessons
+        ├── index.ejs
+        ├── step3.ejs
+        ├── step4.ejs
+        └── test_text.ejs
+
+

@@ -1,0 +1,31 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+express	./routes/index.js	/^var express = require('express');$/;"	v
+router	./routes/index.js	/^var router = express.Router();$/;"	v
+express	./routes/lessons.js	/^var express = require('express');$/;"	v
+router	./routes/lessons.js	/^var router = express.Router();$/;"	v
+router.step3	./routes/lessons.js	/^});$/;"	f
+router.step4	./routes/lessons.js	/^}$/;"	f
+express	./routes/users.js	/^var express = require('express');$/;"	v
+router	./routes/users.js	/^var router = express.Router();$/;"	v
+axpressApp	./public/javascripts/controllers.js	/^var axpressApp = angular.module('axpressApp', []);$/;"	v
+express	./app.js	/^var express = require('express');$/;"	v
+path	./app.js	/^var path = require('path');$/;"	v
+favicon	./app.js	/^var favicon = require('serve-favicon');$/;"	v
+logger	./app.js	/^var logger = require('morgan');$/;"	v
+cookieParser	./app.js	/^var cookieParser = require('cookie-parser');$/;"	v
+bodyParser	./app.js	/^var bodyParser = require('body-parser');$/;"	v
+routes	./app.js	/^var routes = require('.\/routes\/index');$/;"	v
+users	./app.js	/^var users = require('.\/routes\/users');$/;"	v
+lessons	./app.js	/^var lessons = require('.\/routes\/lessons');$/;"	v
+app	./app.js	/^var app = express();$/;"	v
+module.exports	./test/karma.conf.js	/^module.exports = function(config){$/;"	f
+allScriptsTimeout	./test/protractor-conf.js	/^exports.config = {$/;"	p	class:exports.config
+specs	./test/protractor-conf.js	/^  allScriptsTimeout: 11000,$/;"	p	class:exports.config
+NMAXContents	./Contents.txt	/[NMAXContents]/;"zoetag
+ProjectStructure	./.docs/structure.txt	/[ProjectStructure]/;"zoetag
+NMAXTesting	./.docs/testing.txt	/[NMAXTesting]/;"zoetag

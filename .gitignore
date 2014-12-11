@@ -2,9 +2,7 @@ logs/*
 !.gitkeep
 node_modules/
 tmp
-.idea
 .DS_Store
-axpress-snapshots
 public/bower_components/
 *.swp
 *.swo

@@ -1,0 +1,27 @@
+{NMAXContents}
+/***********************************
+	NMAX Testing                 [NMAXTesting]
+************************************/
+
+-------------------------
+Unit Testing of browser code 
+-------------------------
+	Command to run tests:
+		npm test
+	Description:
+		Testing tools Jasmine and Karma.
+	
+
+-------------------------
+E2E Testing 
+-------------------------
+	Command to run tests:
+		npm run protractor
+	Description:
+		Jasmine and Protractor
+	
+
+-------------------------
+Unit Testing Server Side
+-------------------------
+Still to be determined.  Currently, leaning towards Mocha.
