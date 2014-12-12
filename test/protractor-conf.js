@@ -12,7 +12,6 @@ exports.config = {
   // chromeOnly: true,
 	directConnect: true,
 
-
   baseUrl: 'http://localhost:3000',
 
   framework: 'jasmine',
