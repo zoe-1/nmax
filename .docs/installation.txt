@@ -1,0 +1,63 @@
+{NMAXContents}
+/******************************
+	NMAX Installation Notes   [Installation]
+*******************************/
+
+-----------------
+Upgrade npm to current version
+	npm install npm@0.0.0
+
+-----------------
+Firewall Proxy Configuration
+-----------------
+npm config set proxy=127.0.0.0:XXXX
+npm config set https-proxy=127.0.0.0:XXXX
+----
+Configure Curl
+~/.curlrc
+	proxy = socks5://localhost:XXXX
+----
+Configure git
+~/.gitconfig
+	proxy = socks5://localhost:XXXX
+
+-----------------
+Install Commands
+-----------------
+npm install
+	Reads package.json files and installs all packages.
+
+npm run update-webdriver
+	Updates the webdrivers and selenium package.
+	This is key to the Angularjs testing environment, 
+	if you do not have these packages testing environment is broken.
+		
+	MANUAL INSTALL OF:
+		Install the below two programs in the command:
+		npm run update-webdriver
+		If selenium and webdriver fails to install do the 
+		below manual install.
+		
+		node_modules/protractor/selenium directory.
+		When installing the below run the 
+		1. Chrome Webdriver
+			curl -O https://chromedriver.storage.googleapis.com/2.12/chromedriver_mac32.zip
+			Change the name of this file and unzip:
+			mv chromedriver_mac32.zip  chromedriver_2.12.zip
+			tar -xzvf chromedriver_2.12.zip   -->> should output to chromedriver
+
+		2. Selenium Stand Alone
+			curl -O https://selenium-release.storage.googleapis.com/2.44/selenium-server-standalone-2.44.0.jar
+
+		3. node_modules/protractor/selenium directory 
+			 after programs are installed.
+			 node_modules/protractor/selenium/ 
+			 chromedriver
+			 -rw-r--r--   1 user  staff   3255376 Dec 12 16:34 chromedriver_2.12.zip
+			 -rw-r--r--   1 user  staff      1874 Dec 12 16:07 npm-debug.log
+			 -rw-r--r--   1 user  staff  35169724 Dec 12 16:05 selenium-server-standalone-2.44.0.jar
+
+
+
+
+

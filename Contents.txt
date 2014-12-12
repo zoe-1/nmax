@@ -2,6 +2,7 @@
 			CONTENTS NMAX PROJECT   		[NMAXContents]
 *********************************/
 
+{Installation}
 {ProjectStructure}
 {NMAXTesting}
 

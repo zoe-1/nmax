@@ -29,3 +29,4 @@ specs	./test/protractor-conf.js	/^  allScriptsTimeout: 11000,$/;"	p	class:export
 NMAXContents	./Contents.txt	/[NMAXContents]/;"zoetag
 ProjectStructure	./.docs/structure.txt	/[ProjectStructure]/;"zoetag
 NMAXTesting	./.docs/testing.txt	/[NMAXTesting]/;"zoetag
+Installation	./.docs/installation.txt	/[Installation]/;"zoetag
