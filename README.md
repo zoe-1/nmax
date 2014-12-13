@@ -1,19 +1,19 @@
 <h1> NMAX </h1>
 
 <pre>Skeleton project:<br/>
-N = Node.js
-M = MongoDB
-A = Angularjs
-X = Express
+N = Node.js<br/>
+M = MongoDB<br/>
+A = Angularjs<br/>
+X = Express<br/>
 </pre>
 
 <h2>Installation</h2>
 <code>
 git clone https://github.com/zoe-1/nmax.git<br/>
 cd nmax<br/>
-npm install npm@X.X.X current version.<br>
-npm install<br>
-npm run update-webdriver<br>
+npm install npm@X.X.X current version.<br/>
+npm install<br/>
+npm run update-webdriver<br/>
 </code>
 
 
@@ -28,7 +28,8 @@ This skeleton has been tested on Mac and Ubuntu Linux.<br/>
 Run below configuration commands.<br/>
 <code>
 npm config set proxy=127.0.0.1:5678</code><br/>
-<code>npm config set https-proxy=127.0.0.1:5678</code>
+<code>
+npm config set https-proxy=127.0.0.1:5678</code>
 <br/>
 
 <h4>2. Configure curl and git</h4>
@@ -40,7 +41,7 @@ npm config set proxy=127.0.0.1:5678</code><br/>
 [http]<br/>
 &nbsp;&nbsp;&nbsp;proxy = socks5://localhost:9999<br/>
 [https]<br/>
-&nbsp;&nbsp;&nbsp;proxy = socks5://localhost:9999<br/><br/><br/>
+&nbsp;&nbsp;&nbsp;proxy = socks5://localhost:9999<br/><br/>
 </p>
 
 
@@ -64,18 +65,23 @@ very painful.<br/><br/>
 Some references like: https://github.com/angular/protractor/pull/966<br/>
 encourage you to set HTTPS_PROXY AND HTTP_PROXY but this kept failing.<br/>
 Eventually, it worked on Ubuntu but never passed on MAC.
+
+
 <h5>The Solution</h5>
 <p>Execute <code>npm run update-webdriver</code><br/><br/>
 Waite for it to fail and read the error message referring to the<br/>
 webdriver and selenium it is trying to download. When running on the <br/>
-MAC it showed the below urls for the webdriver and Selenium:<br/><br/> <code>https://chromedriver.storage.googleapis.com/2.12/chromedriver_mac32.zip
+MAC it showed the below urls for the webdriver and Selenium:<br/><br/> <code>
+https://chromedriver.storage.googleapis.com/2.12/chromedriver_mac32.zip
 <br/>
-https://selenium-release.storage.googleapis.com/2.44/selenium-server-standalone-2.44.0.jar</code><br/><br/>
-<code>cd node_modules/protractWhen you download and unzip the file with curl the zip file name will not match<br/>
+https://selenium-release.storage.googleapis.com/2.44/selenium-server-standalone-2.44.0.jar</code><br/>
+<code>
+cd node_modules/protract <br/>When you download and unzip the file with curl the zip file name will not match<br/>
 the name create by "update-webdriver".or/selenium</code><br/>
 
 <h5>Manually install selenium:</h5>
-<code>curl -O https://selenium-release.storage.googleapis.com/2.44/selenium-server-standalone-2.44.0.jar</code><br/> 
+<code>
+curl -O https://selenium-release.storage.googleapis.com/2.44/selenium-server-standalone-2.44.0.jar</code><br/> 
 Now, <code>npm run update-webdriver</code> will happily say Selenium is up to date.<br/>
 But, the webdriver is still missing.<br/><br/>
 
@@ -85,14 +91,20 @@ In the previous terminal window watch the files "update-webdriver" command<br/>
 will create in node_modules/protractor/selenium. On the MAC the "update-webdriver"<br/>
 command creates: node_modules/protractor/selenium/chromedriver_2.12.zip.<br/>
 But, when the command fails it deletes this file.<br/><br/>
-<code>curl -O https://chromedriver.storage.googleapis.com/2.12/chromedriver_mac32.zip</code><br/>
+<code>
+curl -O https://chromedriver.storage.googleapis.com/2.12/chromedriver_mac32.zip</code><br/>
 The file created is: node_modules/protractor/selenium/chromedriver_mac32.zip<br/>
 This file name needs to match the name created by the "update-webdriver" command.<br/>
 Otherwise,<br/>
-<code>npm run update-webdriver</code> will not recognize this script.<br/>
-So,<code>
-cd node_modules/protractor/selenium/<br/>
-mv chromedriver_mac32.zip  chromedriver_2.12.zip<br/>
+<code>
+npm run update-webdriver</code> will not recognize this script.<br/>
+So,<br/>
+<code>
+cd node_modules/protractor/selenium/ </code><br/>
+<code>
+mv chromedriver_mac32.zip  chromedriver_2.12.zip</code>
+<br/>
+<code>
 tar -xvzf chromedriver_2.12.zip<br/>
 <br/>
 Now, you have the following files in node_modules/protractor/selenium/<br/>
