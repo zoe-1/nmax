@@ -40,7 +40,7 @@ npm config set proxy=127.0.0.1:5678</code><br/>
 [http]<br/>
 &nbsp;&nbsp;&nbsp;proxy = socks5://localhost:9999<br/>
 [https]<br/>
-&nbsp;&nbsp;&nbsp;proxy = socks5://localhost:9999<br/><br/><br/>
+&nbsp;&nbsp;&nbsp;proxy = socks5://localhost:9999<br/><br/>
 </p>
 
 
