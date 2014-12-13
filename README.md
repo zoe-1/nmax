@@ -9,16 +9,20 @@ X = Express<br/>
 
 <h2>Installation</h2>
 <code>
-git clone https://github.com/zoe-1/nmax.git</code><br/>
+git clone https://github.com/zoe-1/nmax.git
+</code><br/>
 <code>
-cd nmax</code><br/>
+cd nmax
+</code><br/>
 <code>
-npm install npm@X.X.X current version.</code><br/>
+npm install npm@X.X.X current version.
+</code><br/>
 <code>
-npm install<br/>
-</code>
+npm install
+</code><br/>
 <code>
-npm run update-webdriver</code><br/>
+npm run update-webdriver
+</code><br/>
 
 
 <h3>Install Behind Proxy</h3>
