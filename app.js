@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var lessons = require('./routes/lessons');
+var partials = require('./routes/partials');
 
 var app = express();
 
@@ -30,6 +31,9 @@ app.use('/users', users);
 app.use('/lessons', lessons);
 app.use('/step3', lessons.step3);
 app.use('/step4', lessons.step4);
+app.use('/step5', lessons.step5);
+app.use('/step4_json', lessons.step4_json);
+app.use('/step4_template', lessons.step4_template);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -1,0 +1,20 @@
+
+Hi from step4_template :-)
+<br/>
+lessons.title -- {{lessons.title}}<br/>
+lessons.description -- {{lessons.description}}<br/>
+
+Search: <input ng-model="query">
+Sort by:
+<select ng-model="orderProp">
+	<option value="name">Alphabetical</option>
+</select>
+
+<br/>
+<ul>
+<div ng-repeat="file in lessons.file_changes | filter:query | orderBy:orderProp">
+	<li> <span><b>{{file.name}}</b></span>
+	<p>{{file.description}}</p></li>
+	
+</div>
+</ul>
