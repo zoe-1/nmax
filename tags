@@ -31,3 +31,4 @@ ProjectStructure	./.docs/structure.txt	/[ProjectStructure]/;"zoetag
 NMAXTesting	./.docs/testing.txt	/[NMAXTesting]/;"zoetag
 Installation	./.docs/installation.txt	/[Installation]/;"zoetag
 GitNotes	./.docs/git_notes.sh	/[GitNotes]/;"zoetag
+Lessons	./.docs/lessons.txt	/[Lessons]/;"zoetag

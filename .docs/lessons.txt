@@ -1,0 +1,36 @@
+/***************
+	[Lessons]    				{NMAXContents}
+****************/
+
+Below are lessons or notes built to model sample
+solutions that often are generic accross projects. 
+Much of the angular.js code is based on angular's phone-cat 
+sample application.  Their tutorial should be studied before 
+using this nmax sample code.
+https://docs.angularjs.org/tutorial
+
+
+Step-3
+---------------------------
+localhost:3000/step3
+Example of how to add new routs, controllers, and views. 
+
+Step-4
+---------------------------
+localhost:3000/step4
+Example of loading json data from server using Angular.js
+and then listing the data in a view. Additionally, this shows
+how angular.js uses partial html templates in view too. 
+
+Step-5
+---------------------------
+localhost:3000/step5
+Sample code from angular.js phone-cat sample application. 
+Their tutorial should be studied before using this nmax
+application sample code.
+
+
+Step-6
+---------------------------
+localhost:3000/step6
+Example of how to check browser types, sizes, mobile, etc. 

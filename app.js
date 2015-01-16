@@ -32,6 +32,7 @@ app.use('/lessons', lessons);
 app.use('/step3', lessons.step3);
 app.use('/step4', lessons.step4);
 app.use('/step5', lessons.step5);
+app.use('/step6', lessons.step6);
 app.use('/step4_json', lessons.step4_json);
 app.use('/step4_template', lessons.step4_template);
 

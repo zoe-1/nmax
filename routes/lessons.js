@@ -65,4 +65,40 @@ router.step4_template = function(req, res) {
 	 });
 }
 
+router.step6 = function(req, res) { 
+	
+	 var ua = req.headers['user-agent'];
+
+	 $ = {};
+	 	
+	 console.log("user-agent:\n%s",ua);
+
+	 if (/Android/.test(ua)) {
+		 console.log("got Android"); 
+		 $.Android = /Android ([0-9\.]+)[\);]/.exec(ua)[1];
+	 }else if (/iPhone/.test(ua)) {
+		 console.log("got iPhone"); 
+		 // $.iPhone = /iPhone/.test(ua);
+		 $.iPhone = true;
+		 console.log("iPhone: %s", $.iPhone); 
+		 res.render('lessons/step3', {
+			 title: 'Step 6: I-Phone :-) ',
+		 });
+	 }else if (/iPad/.test(ua)) {
+		 console.log("got iPad"); 
+		 $.iPad = true;
+		 res.render('lessons/step6', {
+			 title: 'Step 6: I-Pad :-) ',
+		 });
+	 }else {
+		 console.log("not iPhone or Droid"); 
+		 res.render('lessons/step6', {
+			 title: 'Step 6: Work with user-agent data.',
+		 });
+	 }
+
+
+
+}
+
 module.exports = router;
